@@ -43,6 +43,7 @@ public class BerlinClockImpl implements TimeConverter {
         if (seconds < 0 || seconds > 59) throw new IllegalArgumentException("Seconds out of bounds.");
 
         this.formattedTime = processTime(hours, minutes, seconds);
+		 return formattedTime;
     }
 
     /**
